@@ -2,6 +2,19 @@
 
 To demonstrate [pthreads](http://php.net/manual/en/book.pthreads.php) in action we will use simple example task: Generate 10 random numbers and get their average.
 
+## Requirements:
+- PHP with ZTS
+    ```bash
+    $ php -v
+    PHP 7.2.5 (cli) (built: Feb  6 2019 09:11:29) ( ZTS )
+    Copyright (c) 1997-2018 The PHP Group
+    Zend Engine v3.2.0, Copyright (c) 1998-2018 Zend Technologies
+    ```
+- [pthreads](http://php.net/manual/en/book.pthreads.php) PHP extension:
+    ```bash
+    php -m | grep --color -E "pthreads"
+    pthreads
+    ```
 ## Classes we are going to use:
 
 - [Thread](http://php.net/manual/en/class.thread.php) When the start method of a Thread is invoked, the run method code will be executed in separate Thread, in parallel.
