@@ -12,7 +12,7 @@ To demonstrate [pthreads](http://php.net/manual/en/book.pthreads.php) in action 
     ```
 - [pthreads](http://php.net/manual/en/book.pthreads.php) PHP extension:
     ```bash
-    php -m | grep --color -E "pthreads"
+    $ php -m | grep --color -E "pthreads"
     pthreads
     ```
 ## Classes we are going to use:
